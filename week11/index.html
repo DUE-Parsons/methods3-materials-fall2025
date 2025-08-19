@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 11 | Methods 3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 11</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-analysis-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-analysis-0.png);">
+            <h2>felt can do geoprocessing</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-analysis-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-analysis-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-analysis-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-components.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-0.png);">
+            <h2>more about popups</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-1.png);">
+            <h2>you can format numbers</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-2.png);">
+            <h2>urls become links</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-3.png);">
+            <h2>if you have a column with image urls, you can add those to the top of the popup</h2>
+        </div>
+
+        <div class="slide">
+            <h2>more ways to get data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>connecting to servers to get data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-0.png);">
+            <a class="source" href="https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/ac02a460-da52-11dc-9d70-0017f293bd28">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-1.png);">
+            <a class="source" href="https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/ac02a460-da52-11dc-9d70-0017f293bd28">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-1.png);">
+            <p style="background: white; padding: 1em;">http://www.fao.org/fishery/geoserver/fifao/ows?service=WFS&request=GetFeature&version=1.0.0</br>&typeName=fifao:FAO_AREAS_CWP</p>
+            <a class="source" href="https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/ac02a460-da52-11dc-9d70-0017f293bd28">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-2.png);">
+          <h2>add a new connection with the WFS URL</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-3.png);">
+          <h2>connect, select a layer, and add it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-5.png);">
+          <h2>this is a vector file exactly like a shapefile</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-5.png);">
+          <h2>you can export it to a shapefile if you don't want to rely on the server</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-0.png);">
+            <a class="source" href="https://www.geoseer.net/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-0.png);">
+          <h2>this is a search engine for WFS servers</h2>
+            <a class="source" href="https://www.geoseer.net/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-1.png);">
+            <a class="source" href="https://www.geoseer.net/s.php?q=immigration+australia">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-1.png);">
+            <h2>look for WFS (web feature service) URLs</h2>
+            <a class="source" href="https://www.geoseer.net/s.php?q=immigration+australia">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-1.png);">
+            <h2>WMS (web map service) is useful, too, but is only raster</h2>
+            <a class="source" href="https://www.geoseer.net/s.php?q=immigration+australia">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-2.png);">
+            <a class="source" href="https://www.geoseer.net/rl.php?ql=c1d8f230601b3f44&p=1&q=immigration%20australia#">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-0.png);">
+          <h2>you could also look for Esri FeatureServer URLs</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-0.png);">
+          <h2>for what we're doing, FeatureServer = WFS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-1.png);">
+            <a class="source" href="https://egis.fire.ca.gov/arcgis/rest/services/FRAP/FirePerimeters_FS/FeatureServer/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-qgis.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/dcp-mapserver-0.png);">
+            <a class="source" href="https://www.nyc.gov/site/planning/data-maps/open-data.page">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dcp-mapserver-1.png);">
+            <a class="source" href="https://tiles.arcgis.com/tiles/GfwWNkhOj9bNBqoJ/arcgis/rest/services/GeoreferencedNYCZoningMaps/MapServer">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dcp-mapserver-1.png);">
+          <h2>MapServer is an Esri server that provides images of maps</h2>
+            <a class="source" href="https://tiles.arcgis.com/tiles/GfwWNkhOj9bNBqoJ/arcgis/rest/services/GeoreferencedNYCZoningMaps/MapServer">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dcp-mapserver-2.png);"></div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-3.png);"></div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-3.png);">
+          <h2>create a new connection</h2>
+        </div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-4.png);"></div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-4.png);">
+          <h2>connect, select the layer, and add it</h2>
+        </div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-5.png);"></div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-6.png);"></div>
+
+        <div class="slide" style="background-image: url(img/felt-mapserver.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-mapserver.png);">
+            <h2>you can use these in Felt too</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-mapserver-2.png);">
+        </div>
+
+        <div class="slide">
+            <h2>try it out: search for a WFS or FeatureServer URL you could use</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Getting data from Wikipedia</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tableau-wikipedia.png);">
+            <a class="source" href="https://www.tableau.com/blog/excavating-data-gems-wikipedia-50966">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wikipedia-lists.png);">
+            <a class="source" href="https://en.wikipedia.org/wiki/Wikipedia:Featured_lists">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wikipedia-heritage-0.png);">
+            <a class="source" href="https://en.wikipedia.org/wiki/List_of_World_Heritage_in_Danger">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wikipedia-heritage-1.png);">
+            <a class="source" href="https://en.wikipedia.org/wiki/List_of_World_Heritage_in_Danger">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wikipedia-heritage-2.png);">
+            <a class="source" href="https://en.wikipedia.org/wiki/List_of_World_Heritage_in_Danger">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wikipedia-heritage-mapped.png);">
+            <a class="source" href="https://en.wikipedia.org/wiki/List_of_World_Heritage_in_Danger">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>Getting data from PDFs</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nycha-pdf-0.png);">
+            <a class="source" href="https://www.nyc.gov/assets/nycha/downloads/pdf/pdb2022.pdf">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nycha-pdf-1.png);">
+            <a class="source" href="https://www.nyc.gov/assets/nycha/downloads/pdf/pdb2022.pdf">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-pdf.png);">
+            <a class="source" href="https://academy.datawrapper.de/article/135-how-to-extract-data-out-of-pdfs">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/smallpdf-extract.png);">
+            <a class="source" href="https://smallpdf.com/edit-pdf">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/smallpdf-convert.png);">
+            <a class="source" href="https://smallpdf.com/pdf-to-excel">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pdf-extracted.png);">
+        </div>
+
+        <div class="slide">
+            <h2>3D in QGIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-3d.png); background-size: 50%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/buildings-3d.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-dem-1ft.png);">
+            <a class="source" href="https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-/dpc8-z3jc">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-dem-noaa.png);">
+            <a class="source" href="https://www.fisheries.noaa.gov/inport/item/64732">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-dem-noaa-files.png);">
+            <a class="source" href="https://coast.noaa.gov/htdata/raster5/elevation/NYC_topobathy_BE_DEM_2017_9307/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dem-walkthrough.png);">
+            <a class="source" href="https://opengislab.com/blog/2018/3/20/3d-dem-visualization-in-qgis-30">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-3d-dem.png); background-size: 50%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-3d-rhino.png);">
+            <a class="source" href="https://www.youtube.com/watch?v=WXI5NFqLNpo">source</a>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-3d.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+          <h2>Data Plotly</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/plotly_readme.png);">
+            <a class="source" href="https://github.com/ghtmtt/DataPlotly">Plotly QGIS</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/georgia_plotly.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/georgia_plotly_select.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-data-plotly.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/temporal-controller-animation.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/temporal-controller-animation.gif);">
+          <h2>temporal controller</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/temporal-controller-animation.gif);">
+          <h2>show features from a layer only at the time that they appear</h2>
+        </div>
+
+        <div class="slide">
+            <h2>first, open the temporal controller panel</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/temporal-controller-panel.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/temporal-controller-panel-open.png);">
+        </div>
+
+        <div class="slide">
+            <h2>then, set a layer's temporal properties</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/temporal-controller-properties.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/temporal-controller-properties-tab.png);">
+        </div>
+
+        <div class="slide">
+            <h2>this can work with any kind of feature (points, lines, polygons)</h2>
+        </div>
+
+        <div class="slide">
+            <h2>all you need is a field with the start date and time</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-time.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/temporal-controller-gif.png);">
+            <a href="https://www.gispo.fi/en/open-software/geogiffery-in-2020-with-qgis-temporal-controller/" class="source" target="_blank">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/temporal-controller-menke.png);">
+            <a href="https://www.birdseyeviewgis.com/blog/2020/8/14/creating-a-covid-19-temporal-animation-with-qgis" class="source" target="_blank">source</a>
+        </div>
+
+    </body>
+</html>

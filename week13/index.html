@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 13 | Methods 3</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 13</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide">
+            <h2>rest of the semester:</h2>
+            <ol style="list-style: disc outside; padding-left: 50px;">
+                <li>11/19: Special topics + Work session</li>
+            </ol>
+        </div>
+
+        <div class="slide">
+            <h2>rest of the semester:</h2>
+            <ol style="list-style: disc outside; padding-left: 50px;">
+                <li>11/19: Special topics + Work session</li>
+                <li>11/26: Work session</li>
+            </ol>
+        </div>
+
+        <div class="slide">
+            <h2>rest of the semester:</h2>
+            <ol style="list-style: disc outside; padding-left: 50px;">
+                <li>11/19: Special topics + Work session</li>
+                <li>11/26: Work session</li>
+                <li>12/3: Presentations</li>
+            </ol>
+        </div>
+
+        <div class="slide">
+            <h2>rest of the semester:</h2>
+            <ol style="list-style: disc outside; padding-left: 50px;">
+                <li>11/19: Special topics + Work session</li>
+                <li>11/26: Work session</li>
+                <li>12/3: Presentations</li>
+                <li>12/6: Projects due</li>
+            </ol>
+        </div>
+
+        <div class="slide">
+            <h2>thinking ahead to presentations</h2>
+        </div>
+
+        <div class="slide">
+            <h2>thinking ahead to presentations (12/3)</h2>
+        </div>
+
+        <div class="slide">
+            <h2>plan on sharing how you're applying what we've covered in class</h2>
+        </div>
+
+        <div class="slide">
+            <h2>it's assumed that you will be showing a work in progress</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you'll have around 10 minutes</h2>
+        </div>
+
+        <div class="slide">
+            <h2>I encourage you to make slides</h2>
+        </div>
+
+        <div class="slide">
+            <h2>screenshots of your process can be useful, too</h2>
+        </div>
+
+        <div class="slide">
+            <h2>consider covering</h2>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>project topic / goal</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>consider covering</h2>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>project topic / goal</li>
+                <li>roadblocks</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>consider covering</h2>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>project topic / goal</li>
+                <li>roadblocks</li>
+                <li>outcomes / successes</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>consider covering</h2>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>project topic / goal</li>
+                <li>roadblocks</li>
+                <li>outcomes / successes</li>
+                <li>where the project is now</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>consider covering</h2>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>project topic / goal</li>
+                <li>roadblocks</li>
+                <li>outcomes / successes</li>
+                <li>where the project is now</li>
+                <li>future work</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/projects-2021.png);">
+            <a class="source" href="https://due-parsons.github.io/methods3-fall2017/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/project-submission.png);">
+            <a class="source" href="https://docs.google.com/forms/d/e/1FAIpQLSdPtyehmE72ZnTmmoy2wDxhIOVbzKRG_gOYInTJa3RUdJJjTA/viewform">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/project-submission.png);">
+            <h2>form is in Canvas, feel free to work ahead on this</h2>
+            <a class="source" href="https://docs.google.com/forms/d/e/1FAIpQLSdPtyehmE72ZnTmmoy2wDxhIOVbzKRG_gOYInTJa3RUdJJjTA/viewform">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/final-form-fields.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio.png);">
+            <a href="https://location.foursquare.com/products/studio/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio.png);">
+            <h2>Foursquare Studio</h2>
+            <a href="https://location.foursquare.com/products/studio/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-china-rivers.png);">
+            <a href="https://studio.foursquare.com/public/012a3e7b-1767-4326-a91a-aab9f43319d6" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-30-minutes.png);">
+            <a href="https://studio.foursquare.com/public/1e22faab-59a2-4834-b80e-9c093d84ff4b" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-shipping-routes.png);">
+            <a href="https://studio.foursquare.com/public/f513365e-6d2d-4479-9493-e1c8fa6082b5" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/unfolded.png);">
+            <a href="https://location.foursquare.com/resources/blog/news/introducing-unfolded-studio/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/unfolded.png);">
+            <h2>previously Unfolded</h2>
+            <a href="https://location.foursquare.com/resources/blog/news/introducing-unfolded-studio/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/unfolded.png);">
+            <h2>previously Unfolded, so if you're looking for help you'll sometimes see references to "unfolded"</h2>
+            <a href="https://location.foursquare.com/resources/blog/news/introducing-unfolded-studio/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/unfolded.png);">
+            <h2>came out of the dataviz team at Uber</h2>
+            <a href="https://location.foursquare.com/resources/blog/news/introducing-unfolded-studio/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-pricing.png);">
+            <a href="https://location.foursquare.com/pricing/" class="source">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>Foursquare Studio should feel familiar to you after QGIS and Felt</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Foursquare Studio has a lot more features than Felt but is less intuitive</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-spatial-join.png);">
+            <a href="https://medium.com/foursquare-direct/understanding-spatial-join-in-unfolded-studio-76209fbeb27c" class="source">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>here's <a href="data/week13data.zip">some data</a> if you want to follow along</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-home.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-add-data.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-add-data-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-style.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-interactions.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-basemaps.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-basemaps-add.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-charts.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-time.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper.png);">
+            <a href="https://www.datawrapper.de/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-gothamist.png);">
+            <a class="source" href="https://gothamist.com/news/nypd-issues-hundreds-of-jaywalking-tickets-a-year-vast-majority-go-to-people-of-color">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-example-1.png);">
+            <a href="https://www.newamerica.org/better-life-lab/reports/lifting-barriers-paid-family-and-medical-leave-men-united-states/affording-leave-how-americans-get-pay-when-they-take-leave-and-how-they-cover-the-gaps/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-pricing.png);">
+            <a href="https://www.datawrapper.de/pricing" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/datawrapper-6.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps.png);">
+            <a href="https://storymaps.com/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps.png);">
+            <h2>StoryMaps</h2>
+            <a href="https://storymaps.com/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps.png);">
+            <h2>StoryMaps is part of Esri, but you don't have to use Arc to use it</h2>
+            <a href="https://storymaps.com/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-justice-deferred.png);">
+            <a href="https://storymaps.arcgis.com/stories/6538609586d34405a1d3cd24098519d3" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-justice-deferred-1.png);">
+            <a href="https://storymaps.arcgis.com/stories/6538609586d34405a1d3cd24098519d3" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-redlining.png);">
+            <a href="https://storymaps.arcgis.com/stories/0f58d49c566b486482b3e64e9e5f7ac9" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-redlining-1.png);">
+            <a href="https://storymaps.arcgis.com/stories/0f58d49c566b486482b3e64e9e5f7ac9" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymap-beka.png);">
+            <a href="https://storymaps.com/stories/f955afdc7e3f44e581e390d561fb2355" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-pricing.png);">
+            <a href="https://storymaps.com/pricing" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-new.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-new-block.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-new-block-maps.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-new-block-maps.png);">
+            <h2>the free account only supports "express" maps and ready-to-use (premade by Esri) maps<h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-embed.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-embed.png);">
+            <h2>but you can embed maps from Foursquare Studio or datawrapper</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-embed-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-swipe.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-swipe.png);">
+            <h2>and you can include QGIS maps exported as images</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-swipe.png);">
+            <h2>if you export images with the same resolution and extent the swipe feature works nicely</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymaps-publish.png);">
+        </div>
+
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/qgis-choropleth.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-choropleth.png);">
+            <h2>what if I wanted to put this online without using Felt?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis2web.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis2web.png);">
+            <h2>qgis2web</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis2web.png);">
+            <h2>qgis2web</h2>
+            <h2>creates a webmap out of a QGIS map</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis2web-exported.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis2web-output.png);">
+            <h2>it outputs a folder of code that creates the webmap</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/neocities.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/neocities.png);">
+            <h2>you can upload these files (drag-and-drop) to a site like neocities</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/neocities.png);">
+            <h2>you can upload these files (drag-and-drop) to a site like neocities</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/neocities-live.png);">
+            <a class="source" href="https://ebrelsford.neocities.org/#11/40.6826/-73.8374">source</a>
+        </div>
+
+
+        <div class="slide">
+            <h2>remote sensing</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nadar.jpg);">
+            <a class="source" href="http://professionalaerialphotographers.com/content.aspx?page_id=22&club_id=808138&module_id=158950">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nadar_paris.jpg);">
+            <a class="source" href="http://www.geog.ucsb.edu/~jeff/115a/remotesensinghistory.html">1858, Paris</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nadar_paris2.jpg);">
+            <a class="source" href="http://www.geog.ucsb.edu/~jeff/115a/remotesensinghistory.html">1868, Paris</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/sf_kite.jpg);">
+            <a class="source" href="https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake">1906, San Francisco</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/sf_kite_zoom.jpg);">
+            <a class="source" href="https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake">1906, San Francisco</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lawrence_kite_camera.jpg);">
+            <a class="source" href="http://robroy.dyndns.info/lawrence/air+space.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lawrence_kite_chain.jpg);">
+            <a class="source" href="http://robroy.dyndns.info/lawrence/air+space.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pigeons_cameras.jpg);">
+            <a class="source" href="https://commons.wikimedia.org/wiki/Category:Pigeons_in_aerial_photography">Neubronner, 1908</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/pigeon_photos.jpg);">
+            <a class="source" href="https://commons.wikimedia.org/wiki/Category:Pigeons_in_aerial_photography">Neubronner, 1908</a>
+        </div>
+
+        <div class="slide">
+            <h2>Landsat</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_timeline2.jpg);">
+            <a class="source" href="http://www.space.com/19716-nasa-landsat-satellites-earth-space-infographic.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>the longest continuous satellite imagery collection program</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Landsat is "earth observing", as opposed to people observing (spying)</h2>
+        </div>
+
+        <div class="slide">
+            <h2>1972: first Landsat satellite launched</h2>
+        </div>
+
+        <div class="slide">
+            <h2>1985: Landsat is privatized, run by Hughes and RCA</h2>
+        </div>
+
+        <div class="slide">
+            <h2>2001: Landsat fully returned to public hands</h2>
+        </div>
+
+        <div class="slide">
+            <h2>2007: all Landsat imagery becomes free</h2>
+        </div>
+
+        <div class="slide">
+            <h2>2021: Landsat 9 launched</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat.jpg);">
+            <a class="source" href="http://www.thegeofactor.com/a-new-look-at-the-earth-landsat-8-launches/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_launch.jpg);">
+            <a class="source" href="http://www.ssec.wisc.edu/news/articles/2565">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>Landsat imagery is used for:</h2>
+        </div>
+
+        <div class="slide">
+            <ul style="list-style: disc;">
+                <li>irrigated water monitoring</li>
+                <li>land cover mapping</li>
+                <li>land use change studies</li>
+                <li>invasive species detection and monitoring</li>
+                <li>coastal wetlands monitoring</li>
+            </ul>
+            <a href="http://remotesensing.usgs.gov/landsat_fees.php" class="source">source</a>
+        </div>
+
+        <div class="slide">
+            <h2><em>resolution</em>: how much area on the ground is represented by one pixel</h2>
+        </div>
+
+        <div class="slide">
+            <h2>if a satellite has 30m resolution, each pixel represents a 30m x 30m square</h2>
+        </div>
+
+        <div class="slide">
+            <h2>a smaller number for resolution is better</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/satellite_comparison.png);">
+            <a class="source" href="http://satsummit.github.io/landscape/#capture">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat-overview.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat-zoom.png);">
+        </div>
+
+        <div class="slide">
+            <h2>temporal resolution</h2>
+        </div>
+
+        <div class="slide">
+            <h2>how frequently does the satellite take a picture of a given location?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_paths.gif);">
+            <a class="source" href="http://www.fao.org/docrep/003/t0446e/t0446e04.htm">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_scenes.gif);">
+            <a class="source" href="http://cast.uark.edu/projects/lulc-change-in-carroll-county/literature-review.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>bands</h2>
+        </div>
+
+        <div class="slide">
+            <h2>satellites produce a number of images at different wavelengths</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/em_spectrum.jpg);">
+            <a class="source" href="http://www.ces.fau.edu/nasa/module-2/radiation-sun.php">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_wavelengths.png);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?p=10643">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_truecolor.jpg);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_truecolor.jpg);">
+            <h2>bands 2, 3, and 4 (blue, green, and red)</h2>
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_band5.jpg);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_band5.jpg);">
+            <h2>band 5 (near infrared)</h2>
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/publiclab_infrared.jpg);">
+            <a class="source" href="https://publiclab.org/wiki/near-infrared-camera-history">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_bands6_7.jpg);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_bands6_7.jpg);">
+            <h2>band 6 and 7 (shortwave infrared)</h2>
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_band9.jpg);">
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat_band9.jpg);">
+            <h2>band 9 (clouds)</h2>
+            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>you will combine bands to suit your needs</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landsat8_infrared.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bands.gif);">
+            <a class="source" href="http://satsummit.github.io/landscape/#capture">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/usgs-earth-explorer.png);">
+            <a class="source" href="https://earthexplorer.usgs.gov/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/usgs-earth-explorer.png);">
+            <h2>USGS EarthExplorer makes it relatively straightforward to get Landsat imagery</h2>
+            <a class="source" href="https://earthexplorer.usgs.gov/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/landast-qgis.png);">
+        </div>
+
+
+        <div class="slide" style="background-image: url(img/semi-automatic-classification-cropland.png);">
+            <a class="source" href="http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-cropland.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/scp.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>LiDAR</h2>
+        </div>
+
+        <div class="slide">
+            <h2>light detection and ranging</h2>
+        </div>
+
+        <div class="slide">
+            <h2>LiDAR actively uses lasers and sees how long it takes for a reflection to arrive</h2>
+        </div>
+
+        <div class="slide">
+            <h2>like SONAR (sound) and RADAR (radio waves)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar_diagram.png);">
+            <a class="source" href="http://gis.utah.gov/data/elevation-terrain-data/exploring-lidar/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar.jpg);">
+            <a class="source" href="http://www.mckimcreed.com/airborne-lidar/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar_oregon.png);">
+            <a class="source" href="http://eijournal.com/print/articles/consider-the-benefits-of-mobile-lidar-for-transportation-projects">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/streetview.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/point_cloud_city.gif);">
+            <a class="source" href="https://vimeo.com/89982874">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/self_driving_car.gif);">
+            <a class="source" href="http://thenextweb.com/shareables/2015/11/12/this-is-how-a-self-driving-car-sees-the-streets-of-london/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar-new-england.png);">
+            <a class="source" href="http://news.nationalgeographic.com/news/2014/01/140103-new-england-archaeology-lidar-science/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar-new-england-filtered.png);">
+            <a class="source" href="http://news.nationalgeographic.com/news/2014/01/140103-new-england-archaeology-lidar-science/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar-mexico.png);">
+            <a class="source" href="https://www.bbc.com/news/articles/crmznzkly3go">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lidar-mexico-1.png);">
+            <a class="source" href="https://www.bbc.com/news/articles/crmznzkly3go">source</a>
+        </div>
+
+    </body>
+</html>
