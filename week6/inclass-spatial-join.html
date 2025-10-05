@@ -16,14 +16,14 @@
                 <h2>Spatial Joins</h2>
                 <ol>
                     <li>Open <strong>Council District Boundaries</strong> in QGIS.</li>
-                    <li>Open the CSV in the <strong>Inside Airbnb</strong> folder in QGIS.</li>
+                    <li>Open the <strong>nycha_data_book</strong> GeoPackage in QGIS.</li>
                     <li>Search in the bottom left for <strong>Join attributes by location (summary)</strong>.</li>
                     <li>In this window select:
                         <ol>
                             <li>Join features to: <strong>Council District Boundaries</strong></li>
-                            <li>By comparing to: <strong>Inside Airbnb</strong></li>
-                            <li>Fields to summarise: <strong>price</strong></li>
-                            <li>Summaries to calculate: <strong>mean</strong>, <strong>median</strong></li>
+                            <li>By comparing to: <strong>nycha_data_book</strong></li>
+                            <li>Fields to summarise: <strong>TOTAL NUMBER OF APARTMENTS</strong></li>
+                            <li>Summaries to calculate: <strong>sum</strong></li>
                         </ol>
                     </li>
                     <li>Make a choropleth with the result.</li>
@@ -34,7 +34,7 @@
                 <h2>Optional additional spatial join</h2>
                 <p>If you have time and want to apply geoprocessing with a spatial join:</p>
                 <ol>
-                    <li>Open <strong>New York City Bike Routes.geojson</strong> in QGIS.</li>
+                    <li>Open <strong>New York City Bike Routes</strong> in QGIS.</li>
                     <li>Open <strong>Council District Boundaries</strong> in QGIS.</li>
                     <li>Intersect the two files to get a bike routes file where the bike routes are clipped to the district boundaries. Use <strong>Vector &gt; Geoprocessing &gt; Intersection</strong> and select the two files, bike routes as input and council distrcts as overlay.</li>
                     <li>Change your project's length units by going to <strong>Project &gt; Properties &gt; General</strong> and changing <strong>Units for distance measurement</strong> to <strong>miles</strong>.</li>
