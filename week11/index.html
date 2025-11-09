@@ -26,6 +26,300 @@
             <h1>Methods 3</h1>
         </div>
 
+        <div class="slide" style="background-image: url(img/mayoral-election-results-cuny.png);">
+            <a href="https://www.urbanresearchmaps.org/electioncompare2025/?filters=ascrent&lat=40.70082&lng=-73.97335&zoom=10.20" class="source">urbanresearchmaps.org</a>
+        </div>
+
+        <div class="slide">
+            <h2>so how does a web basemap work?</h2>
+        </div>
+
+        <div class="slide">
+            <p>(a few of these slides are adapted from these excellent <a href="http://maptime.github.io/anatomy-of-a-web-map/#45">Maptime slides</a>)</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+            <h2>most webmaps start with a basemap</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+            <h2>basemaps are tiled</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+            <h2>tiles are 256 x 256 pixel images</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+            <h2>they use the same <em>zoom</em>, <em>x</em>, and <em>y</em> values, so they're interchangeable</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/openwhatevermap.png);">
+            <a href="http://www.openwhatevermap.xyz/" class="source">openwhatevermap.xyz</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom-2.jpg);">
+            <a href="http://maptimeboston.github.io/web-maps-101/#17" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom-3.jpg);">
+            <a href="http://maptimeboston.github.io/web-maps-101/#17" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom-3.jpg);">
+            <h2>as you zoom in, the number of tiles quadruples</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom-3.jpg);">
+            <h2>if you made tiles for all of zoom 18 you'd have nearly 69 <em>billion</em> images</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-loading.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-loading.gif);">
+            <h2>that's why browsers only load what you need to see</h2>
+            <a href="http://maptimeboston.github.io/web-maps-101/#17" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom0.png);">
+        </div>
+
+        <div class="slide">
+            <h2>each tile is just an image on the internet</h2>
+            <p>https://tile.openstreetmap.org/{z}/{x}/{y}.png</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom0.png);">
+            <p style="background: white;">https://tile.openstreetmap.org/0/0/0.png</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom1.png);">
+            <h2>these tiles use OpenStreetMap data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom1.png);">
+            <h2>lately it's also likely to see vector tiles, where the actual data is loaded in tiles</h2>
+        </div>
+
+        <div class="slide">
+            <h2>so how do you <em>make</em> base maps?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>it depends!</h2>
+        </div>
+
+        <div class="slide">
+            <h2>in theory you can make tiles on your own</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox.png);">
+            <h2>but many mapmakers turn to Mapbox</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio.png);">
+            <a href="https://www.mapbox.com/mapbox-studio/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio.png);">
+            <h2>Mapbox provides modified OpenStreetMap data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-pricing.png);">
+            <a href="https://www.mapbox.com/pricing/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-pricing.png);">
+            <h2>not free, but free up to a point</h2>
+            <a href="https://www.mapbox.com/pricing/" class="source">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>unfortunately QGIS and Foursquare Studio integrations are currently broken</h2>
+        </div>
+
+        <div class="slide">
+            <h2>creating styles in Mapbox</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-go-to-studio.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-landing.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-select-base-style.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-new.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-settings.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-style-changes.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-mapbox.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can add your own data to Mapbox maps</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-data-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-data-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-data-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-data-3.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-mapbox-data.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>for the most part, cartographic conventions hold with basemaps</h2>
+        </div>
+
+        <div class="slide">
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>scale</li>
+                <li>hierarchy</li>
+                <li>color</li>
+                <li>symbology</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>but with basemaps, be aware that <em>zooming</em> and <em>panning</em> change how it will be viewed</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/surging-seas.png);">
+            <a class="source" href="https://ss2.climatecentral.org/#12/40.6211/-73.9170?show=satellite&projections=0-K14_RCP85-SLR&level=9&unit=feet&pois=hide">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/basemap-densho.png);">
+            <a class="source" href="https://maps.densho.org/sitesofshame/manzanar/?style=default&lat=36.7274&lon=-118.1536&z=15.33">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-historical-ny.png);">
+            <a class="source" href="https://mappinghny.com/map">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/land-grab-universities.png);">
+            <a class="source" href="https://www.landgrabu.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wapo-renters.png);">
+            <a class="source" href="https://www.washingtonpost.com/news/wonk/wp/2016/05/25/how-much-a-decent-apartment-costs-you-in-every-county/?noredirect=on&utm_term=.32ddb5129c24">source</a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-mapbox-broken.png);">
+            <a class="source" href="https://docs.foursquare.com/analytics-products/docs/maps-basemaps">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio-mapbox-broken.png);">
+            <h2>using Mapbox styles in Foursquare Studio used to work but is broken</h2>
+            <a class="source" href="https://docs.foursquare.com/analytics-products/docs/maps-basemaps">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-qgis-0.png);">
+            <a class="source" href="https://docs.mapbox.com/help/tutorials/mapbox-arcgis-qgis/#add-your-map-in-qgis">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-qgis-0.png);">
+            <h2>using Mapbox tiles in QGIS worked previously but <em>also</em> appears to be broken</h2>
+            <a class="source" href="https://docs.mapbox.com/help/tutorials/mapbox-arcgis-qgis/#add-your-map-in-qgis">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>Mapbox generally shines when it comes to writing your own code</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-gl-js.png);">
+            <a class="source" href="https://codepen.io/ebrelsford/pen/jEWgJaN">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-gl-js-popup.png);">
+            <a class="source" href="https://codepen.io/ebrelsford/pen/xbZvNqK?editors=0010">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-gl-examples.png);">
+            <a class="source" href="https://docs.mapbox.com/mapbox-gl-js/example/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>MapTiler</h2>
+        </div>
+
+        <div class="slide">
+            <h2>MapTiler is better in some ways for QGIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler.png);">
+            <a class="source" href="https://www.maptiler.com/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-home.png);">
+            <a class="source" href="https://www.maptiler.com/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-new.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-style.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-publish.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-qgis.png);">
+            <a class="source" href="https://www.maptiler.com/qgis-plugin/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-qgis-plugin.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-qgis-browse.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-credentials.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-qgis-style.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-qgis-style.png);">
+            <h2>you can now customize your style in QGIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-qgis-style.png);">
+            <h2>when you change projections, the style nicely reprojects</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maptiler-qgis-export.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-maptiler.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
         <div class="slide">
             <h2>more ways to get data</h2>
         </div>
@@ -148,16 +442,6 @@
         <div class="slide" style="background-image: url(img/dcp-mapserver-5.png);"></div>
         <div class="slide" style="background-image: url(img/dcp-mapserver-6.png);"></div>
 
-        <div class="slide" style="background-image: url(img/felt-mapserver.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/felt-mapserver.png);">
-            <h2>you can use these in Felt too</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/felt-mapserver-2.png);">
-        </div>
-
         <div class="slide">
             <h2>try it out: search for a WFS or FeatureServer URL you could use</h2>
         </div>
@@ -215,120 +499,6 @@
         </div>
 
         <div class="slide" style="background-image: url(img/pdf-extracted.png);">
-        </div>
-
-        <div class="slide">
-            <h2>3D in QGIS</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-new-3d.png); background-size: 50%;">
-        </div>
-
-        <div class="slide" style="background-image: url(img/buildings-3d.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/nyc-dem-1ft.png);">
-            <a class="source" href="https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-/dpc8-z3jc">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/nyc-dem-noaa.png);">
-            <a class="source" href="https://www.fisheries.noaa.gov/inport/item/64732">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/nyc-dem-noaa-files.png);">
-            <a class="source" href="https://coast.noaa.gov/htdata/raster5/elevation/NYC_topobathy_BE_DEM_2017_9307/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-dem-walkthrough.png);">
-            <a class="source" href="https://opengislab.com/blog/2018/3/20/3d-dem-visualization-in-qgis-30">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-3d-dem.png); background-size: 50%;">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-3d-rhino.png);">
-            <a class="source" href="https://www.youtube.com/watch?v=WXI5NFqLNpo">source</a>
-        </div>
-
-        <div class="slide">
-            <h2><a href="inclass-3d.html" target="_blank">in-class exercise</a></h2>
-        </div>
-
-        <div class="slide">
-          <h2>Data Plotly</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/plotly_readme.png);">
-            <a class="source" href="https://github.com/ghtmtt/DataPlotly">Plotly QGIS</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/georgia_plotly.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/georgia_plotly_select.png);">
-        </div>
-
-        <div class="slide">
-            <h2><a href="inclass-data-plotly.html" target="_blank">in-class exercise</a></h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/temporal-controller-animation.gif);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/temporal-controller-animation.gif);">
-          <h2>temporal controller</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/temporal-controller-animation.gif);">
-          <h2>show features from a layer only at the time that they appear</h2>
-        </div>
-
-        <div class="slide">
-            <h2>first, open the temporal controller panel</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/temporal-controller-panel.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/temporal-controller-panel-open.png);">
-        </div>
-
-        <div class="slide">
-            <h2>then, set a layer's temporal properties</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/temporal-controller-properties.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/temporal-controller-properties-tab.png);">
-        </div>
-
-        <div class="slide">
-            <h2>this can work with any kind of feature (points, lines, polygons)</h2>
-        </div>
-
-        <div class="slide">
-            <h2>all you need is a field with the start date and time</h2>
-        </div>
-
-        <div class="slide">
-            <h2><a href="inclass-time.html" target="_blank">in-class exercise</a></h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/temporal-controller-gif.png);">
-            <a href="https://www.gispo.fi/en/open-software/geogiffery-in-2020-with-qgis-temporal-controller/" class="source" target="_blank">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/temporal-controller-menke.png);">
-            <a href="https://www.birdseyeviewgis.com/blog/2020/8/14/creating-a-covid-19-temporal-animation-with-qgis" class="source" target="_blank">source</a>
-        </div>
-
-        <div class="slide">
-            <h2>TODO time data in nhgis</h2>
-        </div>
-
-        <div class="slide">
-            <h2>TODO dot density?</h2>
         </div>
 
         <div class="slide">
@@ -398,12 +568,12 @@
 
         <div class="slide" style="background-image: url(img/lincoln-center.jpg);">
             <h2>today</h2>
-            <a class="source" href="http://performingartseducators.org/index.php/fourth-post/">Performing Arts Educators</a>
+            <a class="source" href="http://performingartseducators.org/index.php/fourth-post/">source</a>
         </div>
 
         <div class="slide" style="background-image: url(img/cadman-plaza.jpg);">
             <h2>today</h2>
-            <a class="source" href="http://www.panoramio.com/photo/34791344">Panoramio</a>
+            <a class="source" href="http://www.panoramio.com/photo/34791344">source</a>
         </div>
 
         <div class="slide">
@@ -520,8 +690,6 @@
 
         <div class="slide" style="background-image: url(img/still-vacant3.png);">
         </div>
-
-
 
     </body>
 </html>
